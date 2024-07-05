@@ -1,0 +1,44 @@
+/* selector por etiqueta */
+body {
+    background: #1e3c72;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+/* 
+p {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+*/
+
+h2,h3 {
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* selector por clases */
+.text_one {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.text_two {
+    font-size: 50px;
+    color: rgb(117, 235, 209);
+    font-weight: bold;
+}
+.text_three {
+    font-size: 70px;
+    color: rgb(222, 201, 169);
+    font-weight: bold;
+}
+
+.main_title{
+    font-size: 200px;
+    color: rgb(160, 150, 150);
+    font-weight: bold;
+}
