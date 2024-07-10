@@ -5,10 +5,50 @@ body {
     /* background-color: brown; */
     font-family: "Roboto Mono", monospace; 
     color: #4a76ee;
-    background-color: #eeeff1;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 a{
     color: #4a76ee;
     text-decoration: none;
+}
+
+nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 50px;
+ height: 80px;
+}
+
+nav .left a{
+    color: #252424;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: #6c78de;
+    font-size: 22px;
+}
+
+nav .right a p{
+    color: #6c78de;
+    font-size: 15px;
+}
+/* estilos a mi etiqueta section con class="about-me"*/
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me .profile img{
+    border-radius: 50%;
+    width: 200px; /* largo - ancho */
+    height: 200px;  /* altura */
+    padding: 20px;
 }
