@@ -1,54 +1,88 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-    /* background-color: brown; */
-    font-family: "Roboto Mono", monospace; 
-    color: #4a76ee;
-    background: #D3CCE3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+/* 
+  Este bloque de CSS afecta a todos los elementos HTML en la página,
+  indicados por el asterisco "*".  quitando los estilos por defecto del
+  navegador web
+  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    color: #4a76ee;
-    text-decoration: none;
+/*  Activa el desplazamiento suave para la página. */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: brown; */
+  font-family: "Roboto Mono", monospace;
+  color: #4a76ee;
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+  color: #4a76ee;
+  text-decoration: none;
 }
 
 nav {
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 50px;
- height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
-nav .left a{
-    color: #252424;
-    font-size: 20px;
-    font-weight: 600;
+nav .left a {
+  color: #252424;
+  font-size: 30px;
+  font-weight: 600;
 }
 
-nav .right a{
-    color: #6c78de;
-    font-size: 22px;
+nav .right a {
+  color: #252424;
+  font-size: 22px;
+  margin: 0 10px;
 }
 
-nav .right a p{
-    color: #6c78de;
-    font-size: 15px;
+
+nav .right a:last-child {
+    color: #eeeff1;
+    background-color: #1a1c20;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+
+
+nav .right a span {
+  font-size: 15px;
+  margin-left: 5px;
 }
 /* estilos a mi etiqueta section con class="about-me"*/
-.about-me{
+.about-me {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
 }
 
-.about-me .profile img{
-    border-radius: 50%;
-    width: 200px; /* largo - ancho */
-    height: 200px;  /* altura */
-    padding: 20px;
+.about-me .profile img {
+  border-radius: 50%;
+  width: 350px; /* largo - ancho */
+  height: 350px; /* altura */
+  padding: 20px;
 }
